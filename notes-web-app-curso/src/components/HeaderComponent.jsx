@@ -1,0 +1,27 @@
+import "./HeaderComponent.css";
+import React from "react";
+import { Link } from "react-router-dom";
+
+function HeaderComponent() {
+  return (
+    <header className="header">
+      <h2 className="title">Notes app</h2>
+      <nav>
+        <ul className="nav-list">
+          <li>
+            <Link to="/" className="link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/notes" className="link">
+              NOtas
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+export default HeaderComponent;
